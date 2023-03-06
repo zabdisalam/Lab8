@@ -12,7 +12,7 @@ queue:
 resources:
   repositories:
     - repository: Lab8
-      type: GitHub
+      type: git
       name: Lab8
       endpoint: github.com_zabdisalam
 
