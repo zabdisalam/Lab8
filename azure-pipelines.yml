@@ -7,7 +7,7 @@ trigger:
 - main
 
 queue:
-  name: Azure Pipelines
+  name: Default
 
 resources:
   repositories:
