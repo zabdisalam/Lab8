@@ -14,7 +14,7 @@ resources:
     - repository: Lab8
       type: git
       name: Lab8
-      endpoint: github.com_zabdisalam
+      endpoint: test
 
 pool:
   vmImage: ubuntu-latest
