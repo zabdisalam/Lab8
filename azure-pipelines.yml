@@ -13,7 +13,7 @@ resources:
   repositories:
     - repository: Lab8
       type: git
-      name: Lab8
+      name: zabdisalam/Lab8
       endpoint: test
 
 pool:
