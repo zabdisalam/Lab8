@@ -6,6 +6,16 @@
 trigger:
 - main
 
+queue:
+  name: Azure Pipelines
+
+resources:
+  repositories:
+    - repository: Lab8
+      type: GitHub
+      name: Lab8
+      endpoint: github.com_zabdisalam
+
 pool:
   vmImage: ubuntu-latest
 
