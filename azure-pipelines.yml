@@ -3,11 +3,11 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-trigger:
-- main
+#trigger:
+#- main
 
-queue:
-  name: Default
+#queue:
+  #name: Default
 
 resources:
   repositories:
@@ -29,12 +29,12 @@ pipelines:
       name: test
       #url: <endpoint_url>
 
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+#steps:
+#- script: echo Hello, world!
+  #displayName: 'Run a one-line script'
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+#- script: |
+    #echo Add other tasks to build, test, and deploy your project.
+    #echo See https://aka.ms/yaml
+  #displayName: 'Run a multi-line script'
 
