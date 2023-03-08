@@ -7,17 +7,27 @@ trigger:
 - main
 
 queue:
-  name: Hosted
+  name: Default
 
 resources:
   repositories:
-    - repository: Lab8
+    - repository: self
       type: git
-      name: zabdisalam/Lab8
-      endpoint: test
+      name: $(Build.Repository.Name)
+      ref: $(Build.SourceBranch)
 
-pool:
-  vmImage: Azure Pipelines
+pipelines:
+  - pipeline: tests
+    source: tests
+    trigger:
+      branches:
+        include:
+          - $(Build.SourceBranch)
+    pool:
+      name: Azure Pipelines
+    endpoint:
+      name: test
+      #url: <endpoint_url>
 
 steps:
 - script: echo Hello, world!
@@ -27,3 +37,4 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+
