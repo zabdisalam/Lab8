@@ -7,7 +7,7 @@ trigger:
 - main
 
 queue:
-  name: Azure Pipelines
+  name: Hosted
 
 resources:
   repositories:
@@ -17,7 +17,7 @@ resources:
       endpoint: test
 
 pool:
-  vmImage: Hosted
+  vmImage: Azure Pipelines
 
 steps:
 - script: echo Hello, world!
