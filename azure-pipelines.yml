@@ -15,6 +15,7 @@ resources:
       type: git
       name: $(Build.Repository.Name)
       ref: $(Build.SourceBranch)
+      endpoint: test
 
 pipelines:
   - pipeline: tests
