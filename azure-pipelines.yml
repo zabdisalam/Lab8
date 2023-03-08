@@ -7,7 +7,7 @@ trigger:
 - main
 
 queue:
-  name: Default
+  name: Hosted
 
 resources:
   repositories:
